@@ -1,0 +1,117 @@
+ * {
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+}
+
+figure {
+    display: block;
+    text-align: center;
+}
+
+img{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#intro {
+    text-align: center;
+    padding: 15px 0px 10px 0px;
+}
+
+h1 {
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+}
+
+h2{
+    text-decoration: underline;
+    padding-bottom: 15px; 
+}
+
+li{
+    list-style-type: none;
+}
+
+#tribute-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1E1E1E;
+    border: 1px solid #1E1E1E;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+#tribute-link:hover{
+    background-color: white;
+    color: #1E1E1E;
+    border: 1px solid white;
+}
+
+/* Color of the text */
+
+h1, h2, p, li, figcaption {
+    color: #1E1E1E;
+    border-color: #1E1E1E;
+    font-family: Arial, sans-serif;
+}
+
+#intro {
+    background-color: #8B8B8B;
+}
+
+#tribute-info {
+    background-color: #B4B4B4;
+}
+
+/* GRID LAYOUT */
+
+#grid-wrapper{
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+    "education university"
+    "achievements achievements"
+    "publications publications"
+    "link link";
+    gap: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@media (max-width: 600px) {
+    #grid-wrapper{
+        display: grid;
+        text-align: center;
+        grid-template-areas: 
+        "education"
+        "university"
+        "achievements"
+        "publications"
+        "link";
+    }
+}
+
+#education{
+    grid-area: education;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+#university{
+    grid-area: university;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+#achievements{
+    grid-area: achievements;
+}
+
+#publications{
+    grid-area: publications;
+}
+
+#link {
+    grid-area: link;
+}
